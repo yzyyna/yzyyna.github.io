@@ -5,11 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <title>Document</title>
+    <link rel="icon" href="favicon.ico" />
+    <title>GitHub Pages of Demon</title>
   </head>
   <body>
-    <!-- animate GitHub cat icon,refer to https://kirillmurashov.com/vue-drag-resize/ -->
-    <a class="github-corner">
+    <!-- Text Animation css,refer to https://codepen.io/ClaireLarsen/pen/XmVyVX -->
+    <div
+      class="container"
+      title="refer to https://codepen.io/ClaireLarsen/pen/XmVyVX"
+    >
+      <svg viewBox="0 0 960 300">
+        <symbol id="s-text">
+          <!-- <text text-anchor="middle" x="50%" y="80%">Welcome</text> -->
+        </symbol>
+
+        <g class="g-ants">
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+      </svg>
+    </div>
+    <!-- Animate GitHub cat icon,refer to https://kirillmurashov.com/vue-drag-resize/ -->
+    <a
+      class="github-corner"
+      title="refer to https://kirillmurashov.com/vue-drag-resize/ "
+      href="https://github.com/yzyyna/yzyyna.github.io"
+      target="_blank"
+    >
       <svg
         width="80"
         height="80"
@@ -39,8 +64,15 @@
       </svg>
     </a>
     <section>
-      <a href="./d3/index.html">d3 demo</a>
-      <a href="./vue_router_demo/index.html">VueRouter demo</a>
+      <a href="./d3/index.html">D3.js demo</a>
+      <a href="./vue_router_demo/index.html">Vue Router demo</a>
     </section>
   </body>
+  <script>
+    const a = document.querySelectorAll("section a");
+    a.forEach((e) => {
+      // open in new tab
+      e.setAttribute("target", "_blank");
+    });
+  </script>
 </html>

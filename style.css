@@ -1,7 +1,75 @@
-.github-corner:hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out;
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+  padding: 20px;
+  background: #030321;
 }
-@keyframes octocat-wave {
+section a:hover {
+  color: tomato;
+}
+
+.container {
+  display: flex;
+  /*   border:1px solid red; */
+  height: 100%;
+  font-family: Arial;
+  align-items: center;
+}
+
+.container svg {
+  display: block;
+  font: 10.5em "Montserrat";
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.container .text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.container .text-copy:nth-child(1) {
+  stroke: #4d163d;
+  animation-delay: -1;
+}
+
+.container .text-copy:nth-child(2) {
+  stroke: #840037;
+  animation-delay: -2s;
+}
+
+.container .text-copy:nth-child(3) {
+  stroke: #bd0034;
+  animation-delay: -3s;
+}
+
+.container .text-copy:nth-child(4) {
+  stroke: #bd0034;
+  animation-delay: -4s;
+}
+
+.container .text-copy:nth-child(5) {
+  stroke: #fdb731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
+.github-corner {
+  cursor: pointer;
+}
+​.github-corner:hover .octo-arm {
+  animation: cat-wave 560ms ease-in-out;
+}
+@keyframes cat-wave {
   0%,
   100% {
     transform: rotate(0);
@@ -20,6 +88,6 @@
     animation: none;
   }
   .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
+    animation: cat-wave 560ms ease-in-out;
   }
 }
