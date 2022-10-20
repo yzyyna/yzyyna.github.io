@@ -73,6 +73,7 @@
     a.forEach((e) => {
       // open in new tab
       e.setAttribute("target", "_blank");
+      e.setAttribute("title", `open ${e.textContent} in new tab`);
     });
   </script>
 </html>
