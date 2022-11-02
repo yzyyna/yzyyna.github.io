@@ -26,6 +26,7 @@
       <router-link to="/user/3/posts">Go to /user/:id sub /posts</router-link>
       <router-link to="/user/4/dd">Go to /user/:id not found/</router-link>
       <router-view></router-view>
+      <button @click="backToMain">back</button>
     </div>
     <script>
       const Root = {
@@ -44,11 +45,11 @@
       };
       const NotFoundMain = {
         template: `
-        <div>not found Component outer</div>
+        <div>not  found Component outer</div>
         `,
       };
       const UserProfile = {
-        template: `
+        template: `  
         <div>UserProfile Component</div>
         `,
       };
@@ -79,8 +80,7 @@
             path: "/user/:id",
             component: User,
             children: [
-              // 你会发现，children 配置就是像 routes 配置一样的路由配置数组，
-              // 所以呢，你可以嵌套多层路由。
+              // 你会发现，children 配置就是像 routes 配置一样的路由配置数组,所以呢，你可以嵌套多层路由。
               // 此时，基于上面的配置，当你访问 /user/foo 时，
               // User 的出口是不会渲染任何东西，这是因为没有匹配到合适的子路由。
               // 如果你想要渲染点什么，可以提供一个 空的 子路由：
@@ -113,7 +113,14 @@
           },
         ],
       });
-      const app = new Vue({ router }).$mount("#app");
+      const app = new Vue({
+        router,
+        methods: {
+          backToMain() {
+            window.location = "https://yzyyna.github.io/vue_router_demo";
+          },
+        },
+      }).$mount("#app");
     </script>
   </body>
 </html>
