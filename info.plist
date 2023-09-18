@@ -12,19 +12,19 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>http://xxx.xxx.com/xxxx.ipa</string>
+                    <string>https://github.com/yzyyna/yzyyna.github.io/raw/master/__UNI__CEB1239__20230914120136.ipa</string>
                 </dict>
             </array>
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>请填上你的开发者证书用户名</string>
+                <string>com.fortrustapp.fortrustyun</string>
                 <key>bundle-version</key>
-                <string>版本</string>
+                <string>1.0.0</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
-                <string>请填上标题</string>
+                <string>FPSS云</string>
             </dict>
         </dict>
     </array>
