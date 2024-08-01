@@ -16,7 +16,7 @@
 
 该方法的参数可以是一个字符串路径，或者一个描述地址的对象。例如：
 
-```javascript
+```javascript 
 // 字符串
 router.push("home");
 
